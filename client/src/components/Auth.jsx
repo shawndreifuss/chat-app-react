@@ -19,14 +19,14 @@ const initialState = {
 
 const Auth = () => {
   // Setting Sign in and Sign up states
-  const [isSignUp, setIsSignUp] = useState(true);
+  const [isSignUp, setIsSignUp] = useState(false);
   // Getting Values from Form
   const [form, setForm] = useState(initialState);
 
   // Handle Change for inputs
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
-   
+   console.log(form);
   };
 
   //Switch between Sign In and Sign Up
